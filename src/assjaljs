@@ -1,0 +1,25 @@
+std::vector<float> indices;
+            indices.push_back(i);
+            indices.push_back(j);
+            std::vector<std::vector<float> > indexes;
+            indexes.push_back(indices);     
+
+
+std::vector< std::vector<Mesh::Vertex *> > row; 
+    int number_of_clusters;
+    size_t i1,j1;
+    for(size_t j = 0;j<number_of_clusters;j++){
+        std::vector<Mesh::Vertex *> cluster1;
+        for(size_t i = 0; i < transformations.size() ; i++){
+        
+            if(labels[i]==j){
+                
+                i1 = 
+                Mesh::Vertex* Vi1 = sampledPoints[indexes[i][0]];
+                Mesh::Vertex* Vj1 = sampledPoints[indexes[i][1]];
+                cluster1.push_back(Vi1);
+                cluster1.push_back(Vj1);
+            }
+        }
+        row.pushback(cluster1);          
+}
